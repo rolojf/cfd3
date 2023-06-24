@@ -1,0 +1,52 @@
+#+TITLE: Org Mode Demo
+#+STARTUP: indent
+#+OPTIONS: num:nil
+#+BEGIN_EXPORT html
+---
+title: "Nuestro Alcance"
+description: "Descripción de las aŕeas de accióon de la Comunidad Familia de Dios"
+menuGoes: true
+menu:
+  -
+    queDice: Inicio
+    dir: ""
+    especial: false
+    externa: false
+  -
+    queDice: Sobre Nosotros
+    dir: sub/nosotros
+    especial: false
+    externa: false
+  -
+    queDice: Aviso de Privacidad
+    dir: "https://reftex.com/privacidad"
+    especial: false
+    externa: true
+  -
+    queDice: ¡Contáctanos!
+    dir: contacto
+    especial: true
+    externa: false
+---
+#+END_EXPORT
+* Alcance de la Comunidad Familia de Dios
+** DISTRIBUCIÓN PARROQUIAL:
+Actualmente, existen 18 o más COMUNIDADES FAMILIA DE DIOS en el área de Monterrey, 2 en Monclova y 2 en Saltillo, Coah. Nuestra estancia Parroquial se limita a 3 años, una vez que se ha concluido la formación de los líderes quienes continúan con el proceso anterior en su propia Parroquia. Hay Parroquias que ya han adoptado el sistema o proceso anterior con resultados bastantes satisfactorios. Cada Familia sigue preparándose y formándose para llegar a ser “Formadores de Formadores”, y la Palabra de Dios sigue “rodando”, sin detenerse, “la Caravana solose detiene para predicar”. Familias Evangelizando a Familias en todos sus segmentos.
+
+** EVANGELIZANDO A TRAVÉS DE LOS MEDIOS. 
+*** RADIO:
+Desde hace más de 7 años, y respondiendo al Plan de Pastoral Orgánica de la Diocesis, COMUNIDAD FAMILIA DE DIOS está utilizando los medios de comunicación social, y en tal sentido se logró obtener un Programa de Radio denominado COMUNIDAD FAMILIA DE DIOS, en la XET en el 990 AM del cuadrante, todos los martes de 9:00 p.m. a 10:00 p.m., el cual duró alrededor de 12 años, mismo que era conducido por 12 parejas que habían sido debidamente entrenadas y capacitadas para tal efecto.
+
+Actualmente, COMINIDAD FAMIIA DE DIOS está presente en el radio en San Antonio, Texas a través de Virgen Gudalupe Radio y de Fresno, California, a través de Bendita Eucaristía Radio en los Estados Unidos de América.
+
+** REDES SOCIALES. INTERNET:
+Por otro lado, COMUNIDAD FAMILIA DE DIOS ha establecido una página en la Internet bajo el siguiente dominio: www.comunidadfamiliadedios.org la cual se ha mantenido abierta por más de 7 años, misma que contiene el Programa de Radio y los eventos y noticias más relevantes de nuestra Comunidad, a través de la cual sostenemos diálogo con nuestros propios miembros y con usuarios en general.
+
+** TELEVISIÓN, CINE Y PRENSA:
+Es importante notar que en la Ciudad de Monclova, Coahuila, COMUNIDAD FAMILIA DE DIOS se ha establecido en los siguientes medios de comunicación:
+ 1. Con 3 Programas de Radio en otras tantas Estaciones de FM,
+ 2. En la Internet, en el dominio www.cristoenlinea.org,
+ 3. Hace varios años (alredeor de 15) inauguramos con los Presbíteros Gilberto Almaraz y Eduardo Neri, el Programa Comunidad Familia de Dios en el Canal 4 de la Televisión local que se transmite a 15 Municipios del Estado de Coahuila. Los Hermanos de Monclova han reservado un programa al mes para la COMUNIDAD FAMILIA DE DIOS de Monterrey,
+ 4. Así como también en el Cine de la localidad en donde se transmiten películas y filmes sobre la vida de los Santos y de temas que motivan nuestra fe Católica a precios verdaderamente accesibles para toda la Familia, y,
+ 5. Una vez al mes se nos ha reservado una columna en el diario El Zócalo de aquélla Ciudad.
+
