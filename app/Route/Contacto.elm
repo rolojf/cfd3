@@ -322,7 +322,7 @@ viewLayout =
         [ div
             [ class "tw lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2" ]
             [ Html.img
-                [ class "tw h-56 w-full object-cover object-top lg:absolute lg:h-screen"
+                [ class "tw h-56 w-full object-cover object-right lg:absolute lg:h-screen"
                 , Attr.src <|
                     MiCloudinary.url
                         HardCodedData.imagen.logoTrans

@@ -7,7 +7,7 @@
       "cli": "elm-pages/generator/src/cli.js",
       "build": "tailwindcss -i input.css -o tailwind.css --minify && elm-pages build",
       "tail": "tailwindcss -i input.css -o tailwind.css",
-      "server": "python -m http.server 8421 --bind 127.0.0.12 --directory dist",
+      "server": "python -m http.server 8421 --bind 127.0.0.12 --directory dist"
    },
    "devDependencies": {
       "@tailwindcss/aspect-ratio": "^0.4.2",
