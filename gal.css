@@ -93,3 +93,7 @@
 .slider .nav .prev:hover {
    transform: translateX(-0.5rem);
 }
+
+.slider .sombra {
+    text-shadow: 3px 3px 3px white; /* horizontal offset, vertical offset, blur radius, color */
+}

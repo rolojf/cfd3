@@ -941,14 +941,14 @@ viewSlider showIt listadoCompletoImgs textos slideActivo animar =
                                         Animated.html
                                             Html.span
                                             (letraVa indice)
-                                            []
+                                            [ class "sombra" ]
                                             [ text (String.fromChar letra) ]
 
                                     Entra ->
                                         Animated.html
                                             Html.span
                                             (letraViene indice)
-                                            []
+                                            [ class "sombra" ]
                                             [ text (String.fromChar letra) ]
                             )
                     )
