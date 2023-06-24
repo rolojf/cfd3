@@ -1,0 +1,14 @@
+node_modules/
+elm-stuff/
+dist/
+.cache/
+.elm-pages/
+/tailwind.css
+functions/render
+functions/server-render
+.idea
+.idea/
+.vscode/
+.local/
+docs.json
+.netlify/

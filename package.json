@@ -1,0 +1,32 @@
+{
+   "name": "mep3-app",
+   "type": "module",
+   "scripts": {
+      "postinstall": "elm-tooling install",
+      "elm": "elm-pages dev",
+      "cli": "elm-pages/generator/src/cli.js",
+      "build": "tailwindcss -i input.css -o tailwind.css --minify && elm-pages build",
+      "tail": "tailwindcss -i input.css -o tailwind.css",
+      "server": "python -m http.server 8421 --bind 127.0.0.12 --directory dist",
+      "asdf": "aws s3 sync ./dist s3://asdf.mx --delete"
+   },
+   "devDependencies": {
+      "@tailwindcss/aspect-ratio": "^0.4.2",
+      "@tailwindcss/forms": "^0.5.3",
+      "@tailwindcss/line-clamp": "^0.4.4",
+      "@tailwindcss/typography": "^0.5.9",
+      "autoprefixer": "^10.4.13",
+      "elm-codegen": "^0.3.0",
+      "elm-optimize-level-2": "^0.3.5",
+      "elm-pages": "^3.0.2",
+      "elm-review": "^2.10.2",
+      "elm-tooling": "^1.14.0",
+      "postcss": "^8.4.21",
+      "tailwindcss": "^3.3.2",
+      "vite": "^4.3.5",
+      "vite-plugin-webfont-dl": "^3.6.0"
+   },
+   "dependencies": {
+      "@netlify/functions": "^1.4.0"
+   }
+}

@@ -1,0 +1,259 @@
+#+TITLE: Org Mode Demo
+#+STARTUP: indent
+#+BEGIN_EXPORT html
+---
+title: "Probando el html matonamente"
+description: "Una página de prueba de Orgmode pasada a Html"
+menuGoes: true
+menu:
+  -
+    queDice: Inicio
+    dir: ""
+    especial: false
+    externa: false
+  -
+    queDice: Sobre Nosotros
+    dir: about
+    especial: false
+    externa: false
+  -
+    queDice: Aviso de Privacidad
+    dir: "https://reftex.com/privacidad"
+    especial: false
+    externa: true
+  -
+    queDice: ¡Contáctanos!
+    dir: contacto
+    especial: true
+    externa: false
+---
+#+END_EXPORT
+[[https://github.com/ornash/notes/blob/master/emacs/org-mode-demo.org][Github Page]]
+
+
+* Intro
+Text text text!
+** more items
+** yet more
+*** next level
+**** level 4
+***** level 5
+****** level 6
+******* level 7
+******** level 8
+********* level 9
+********** level 10
+
+* Metadata
+- The following text changes the title of exported file.
+- =#+TITLE: Intro to Org-mode=
+#+TITLE: Intro to Org-mode
+- =#+OPTIONS: toc:nil= : Disables TOC on exported page.
+#+OPTIONS: toc:nil
+- =#+OPTIONS: p:t= : Enables date on exported page.
+#+OPTIONS: p:t
+- =#+OPTIONS: ^:nil= : Treat underscores as they are while exporting. Otherwise it subscripts the text followed by underscore.
+#+OPTIONS: ^:nil
+- Plenty of options are available.
+- [[https://orgmode.org/manual/Export-settings.html][Export settings]]
+
+* Markup
+- *bold*, /italic/, =verbatim=, +strikethrough+
+- =*bold*=, =/italic/=, ==verbatim==, =+strikethrough+=
+
+- bulleted
+- list
+- items
+
+* Links								       :keys:
+- Everything in an org mode file is text and can be editted in other editor like vim. Do backspace at the end of link to notice the format.
+- Can link to a HTML, file, email etc.
+- Press "C-c C-l" to create a link.
+- Press "C-c C-o" to open the link.
+
+** HTML Page
+[[https://orgmode.org/][Org-mode Website]]
+[[https://orgmode.org/manual/External-links.html][Org-mode External Links Wiki]]
+=[[https://orgmode.org/][Org-mode Website]]=
+
+** File on Disk
+- Starts a link to file with "file:"
+
+[[file:emacs-commands.txt][Emacs Commands]]
+[[file:~/home/Audible_Eclipse_Formatter.xml][Audible Eclipse Formatter]]
+
+** Org-file headers
+[[*Markup][Link To Markup]]
+
+* Checkboxes
+  - [X] first, press 'C-c C-c' to toggle checkbox.
+  - [ ] second
+  - [ ] third
+  - [-] progress bar [2/3] Create it by typing '/' in '[]', it is auto populated when subitems are toggled.
+    - [X] one
+    - [ ] two
+    - [X] three
+  - [-] percentage bar [33%] Create it by typing '%' in '[]', it is auto populated when subitems are toggled.
+    - [X] i
+    - [ ] ii
+    - [ ] iii
+
+* Todo stuff!!                                                         :keys:
+  Text goes here.
+  Next test goes here.
+
+- Org mode was designed for todo stuff.
+- States are only allowed on headers.
+** TODO explain todo lists
+** DONE cycle through states.
+   - Press "C-c C-t" to cycle through states.
+   - Can also use 'Shift-<arrow keys>'
+     - up: raise priority
+     - down: lower priority
+     - left: previous state
+     - right: next state
+** DONE Setup deadline. Press "C-c C-d" to bring up a calendar. Use "Shift-<arrow keys>" to navigate the calendar.
+   DEADLINE: <2018-07-31 Tue>
+* Date and Time                                                        :keys:
+https://orgmode.org/manual/Creating-timestamps.html
+- 'C-c C-d' Setup deadline. Press "C-c C-d" to bring up a calendar. Use "Shift-<arrow keys>" to navigate the calendar.
+- 'C-c .' Prompt for date and insert a corresponding timestamp. Modify the timestamp if cursor is on a timestamp. When
+  this command is used twice in succession, a *time range* is inserted.
+- 'C-c !' Like C-c ., but insert an inactive timestamp that will not cause an agenda entry.
+- 'Shift-<arrow keys>' Very useful to change the date after it is inserted. also useful to move date between
+  agend-non-agend modes.
+- 'C-c <' Insert a timestamp corresponding to wherever the cursor is in the Calendar.
+- 'C-c >' Access the Emacs calendar for the current date. If there is a timestamp in the current line, go to the
+  corresponding  date instead.
+- 'C-c C-o' Access the agenda for the date given by the timestamp or -range at point (see Weekly/daily agenda).
+- 'C-c C-y' Evaluate a time range by computing the difference between start and end. With a prefix argument, insert
+  result  after the time range (in a table: into the following column).
+
+* Key Bindings                                                         :keys:
+- 'M-RET' insert new header/item at the same level.
+- 'C-RET' insert new header after subtree.
+- 'Shift-M-RET' insert new TODO entry/checkbox item
+- 'Shift-C-RET' insert TODO entry/ckbx after subtree
+- 'C-c -' turn (head)line into item, and also cycle item type (-, +, 1., 1) etc.)
+- 'C-c *' turn item/line into headline
+- 'C-c C-*' turn all items/lines into headline
+- 'M-<arrow keys>'
+  - up: move up
+  - down: move down
+  - left: promote header level (create super item)
+  - right: demote header level (create sub item)
+- 'Shift-Tab' Cycles the entire buffer by visting each subtree in order.
+- 'Tab'
+  - When pressed on a group of list items/headers, it expands/collapse the tree.
+  - When pressed on an individual list item/header, it cycles through various levels of header/list.
+- 'C-c C-n' next heading
+- 'C-c C-p' previous heading
+- 'C-c C-f' next heading at the same level
+- 'C-c C-b' previous heading at the same level
+- 'C-c C-u' backward to higher level heading
+- 'C-c C-z' take a note
+- [[https://orgmode.org/orgcard.pdf][Complete Short Cuts Wiki]]
+
+* Indentaion
+- Use org-indent-mode to toggle indentation in a file.
+- You can turn on org-indent-mode for all files by customizing the variable org-startup-indented.
+- You can turn it on for individual files using
+=#+STARTUP: indent=
+#+STARTUP: indent
+
+* Paragraphs
+- [[https://orgmode.org/manual/Paragraphs.html#Paragraphs][Wiki]]
+Paragraphs are separated by at least one empty line. If you need to enforce a line break within a paragraph, use ‘\\’ at the end of a line.
+
+To preserve the line breaks, indentation and blank lines in a region, but otherwise use normal formatting, you can use this construct, which can also be used to format poetry.
+
+ #+BEGIN_VERSE
+ Great clouds overhead
+ Tiny black birds rise and fall
+ Snow covers Emacs
+
+     -- AlexSchroeder
+#+END_VERSE
+When quoting a passage from another document, it is customary to format this as a paragraph that is indented on both the left and the right margin. You can include quotations in Org mode documents like this:
+
+ #+BEGIN_QUOTE
+Everything should be made as simple as possible,
+but not any simpler -- Albert Einstein
+#+END_QUOTE
+If you would like to center some text, do it like this:
+
+#+BEGIN_CENTER
+Everything should be made as simple as possible, \\
+but not any simpler
+#+END_CENTER
+
+* Tables							 :keys:notes:
+- These are as powerful as spreadsheets(supports formulas and lisp code). Learn more about it later.
+- 1. Create columns separate by |
+- 2. Type "|-" and press tab, this will complete the table.
+- 3. Now type text in rows, it auto-formats the width. Also reformats the table when you move to next line.
+- 4. M-<arrow keys> : allows you to move around rows or columns.
+
+| fdskljfl      | saldfkjls     |
+|---------------+---------------|
+| lasdfjlsdjfjs | sdjflajsdlfjl |
+| sldfjls       |               |
+|               |               |
+
+| Some | Data           |
+|------+----------------|
+|   12 | buckle my shoe |
+|   34 | shut the door  |
+
+| col2          | col 3     | column 1 |
+|---------------+-----------+----------|
+| jdljaf        | jlkjlj    | asdjfl   |
+| fjdfkdjfkdjfj | kdjfkjdkf | afdj     |
+
+| test        | col2 | col3 |
+|-------------+------+------|
+| adlfjaldsjf |      |      |
+
+* Source code							      :notes:
+- Add formatted source code to notes.
+- Type below text or just type shortcut "<s TAB" to generate it.
+- =#+BEGIN_SRC java=
+- =#+END_SRC=
+
+#+BEGIN_SRC java
+public class MyTest {
+    public static int getNumber() {
+        return 1;
+    }
+}
+#+END_SRC
+
+* Tags								       :keys:
+- Press 'C-c C-c' to create a tag.
+- Repeat it to add new tag.
+- Tags can only be created on headers.
+- Tags are case-sensitive.
+
+* LaTeX integration						      :notes:
+- Characters: \alpha \rightarrow \beta
+- $O(n \log n)$
+
+* Export							       :keys:
+- Supports export to various formats.
+- Use "C-c C-e" to export.
+- Press the key corresponding to your export format.
+- [[https://orgmode.org/manual/Export-settings.html][Export settings]]
+
+* Agenda							 :keys:notes:
+- Press 'C-c [' to enable agenda.
+- Press 'M-x org-agenda' to bring up agend options
+* Notes                                                               :notes:
+- 'M-x org-info' to view org-mode help documentation.
+- Use Org-mode for things that dont change to often. e.g. config, KB, wiki, papers etc.
+- Above suggestion is contrary to the principles of Litrerate Programming.
+- Various elisp utilities are available to enhance Org-mode. e.g. there is one to pretty print bullets and tabify them.
+- Few examples:
+=org2blog=
+=org-publish=
+=ox-twbs=
+=orgzly=

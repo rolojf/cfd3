@@ -1,0 +1,552 @@
+---
+title: "Probando el html matonamente"
+description: "Una página de prueba de Orgmode pasada a Html"
+menuGoes: true
+menu:
+  -
+    queDice: Inicio
+    dir: ""
+    especial: false
+    externa: false
+  -
+    queDice: Sobre Nosotros
+    dir: about
+    especial: false
+    externa: false
+  -
+    queDice: Aviso de Privacidad
+    dir: "https://reftex.com/privacidad"
+    especial: false
+    externa: true
+  -
+    queDice: ¡Contáctanos!
+    dir: contacto
+    especial: true
+    externa: false
+---
+<p>
+<a href="https://github.com/ornash/notes/blob/master/emacs/org-mode-demo.org">Github Page</a>
+</p>
+
+
+<div id="outline-container-orge4298bc" class="outline-2">
+<h2 id="orge4298bc"><span class="section-number-2">1.</span> Intro</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Text text text!
+</p>
+</div>
+<div id="outline-container-orgd57b1a4" class="outline-3">
+<h3 id="orgd57b1a4"><span class="section-number-3">1.1.</span> more items</h3>
+</div>
+<div id="outline-container-orgcfe3eca" class="outline-3">
+<h3 id="orgcfe3eca"><span class="section-number-3">1.2.</span> yet more</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-orgafac0ba" class="outline-4">
+<h4 id="orgafac0ba"><span class="section-number-4">1.2.1.</span> next level</h4>
+<div class="outline-text-4" id="text-1-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgb970e3c"></a>level 4<br>
+<ol class="org-ol">
+<li><a id="org66bf23b"></a>level 5<br>
+<ol class="org-ol">
+<li><a id="orgc311e06"></a>level 6<br>
+<ol class="org-ol">
+<li><a id="org944afbf"></a>level 7<br>
+<ol class="org-ol">
+<li><a id="org2ebc01a"></a>level 8<br>
+<ol class="org-ol">
+<li><a id="org16c4c80"></a>level 9<br>
+<ol class="org-ol">
+<li><a id="org5bc3e4c"></a>level 10<br></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org81a6ee3" class="outline-2">
+<h2 id="org81a6ee3"><span class="section-number-2">2.</span> Metadata</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>The following text changes the title of exported file.</li>
+<li><code>#+TITLE: Intro to Org-mode</code></li>
+</ul>
+<ul class="org-ul">
+<li><code>#+OPTIONS: toc:nil</code> : Disables TOC on exported page.</li>
+</ul>
+<ul class="org-ul">
+<li><code>#+OPTIONS: p:t</code> : Enables date on exported page.</li>
+</ul>
+<ul class="org-ul">
+<li><code>#+OPTIONS: ^:nil</code> : Treat underscores as they are while exporting. Otherwise it subscripts the text followed by underscore.</li>
+</ul>
+<ul class="org-ul">
+<li>Plenty of options are available.</li>
+<li><a href="https://orgmode.org/manual/Export-settings.html">Export settings</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf5d8fbe" class="outline-2">
+<h2 id="orgf5d8fbe"><span class="section-number-2">3.</span> Markup</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li><b>bold</b>, <i>italic</i>, <code>verbatim</code>, <del>strikethrough</del></li>
+<li><code>*bold*</code>, <code>/italic/</code>, <code>=verbatim=</code>, <code>+strikethrough+</code></li>
+
+<li>bulleted</li>
+<li>list</li>
+<li>items</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgeddaf3e" class="outline-2">
+<h2 id="orgeddaf3e"><span class="section-number-2">4.</span> Links&#xa0;&#xa0;&#xa0;<span class="tag"><span class="keys">keys</span></span></h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>Everything in an org mode file is text and can be editted in other editor like vim. Do backspace at the end of link to notice the format.</li>
+<li>Can link to a HTML, file, email etc.</li>
+<li>Press "C-c C-l" to create a link.</li>
+<li>Press "C-c C-o" to open the link.</li>
+</ul>
+</div>
+
+<div id="outline-container-orgeadd534" class="outline-3">
+<h3 id="orgeadd534"><span class="section-number-3">4.1.</span> HTML Page</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+<a href="https://orgmode.org/">Org-mode Website</a>
+<a href="https://orgmode.org/manual/External-links.html">Org-mode External Links Wiki</a>
+<code>[[https://orgmode.org/][Org-mode Website]]</code>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org64a3b25" class="outline-3">
+<h3 id="org64a3b25"><span class="section-number-3">4.2.</span> File on Disk</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>Starts a link to file with "file:"</li>
+</ul>
+
+<p>
+<a href="emacs-commands.txt">Emacs Commands</a>
+<a href="file:///home/a1rolo/home/Audible_Eclipse_Formatter.xml">Audible Eclipse Formatter</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org825d20b" class="outline-3">
+<h3 id="org825d20b"><span class="section-number-3">4.3.</span> Org-file headers</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+<a href="#orgf5d8fbe">Link To Markup</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5f2d0c4" class="outline-2">
+<h2 id="org5f2d0c4"><span class="section-number-2">5.</span> Checkboxes</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> first, press 'C-c C-c' to toggle checkbox.</li>
+<li class="off"><code>[&#xa0;]</code> second</li>
+<li class="off"><code>[&#xa0;]</code> third</li>
+<li class="trans"><code>[-]</code> progress bar <code>[2/3]</code> Create it by typing '/' in '[]', it is auto populated when subitems are toggled.
+<ul class="org-ul">
+<li class="on"><code>[X]</code> one</li>
+<li class="off"><code>[&#xa0;]</code> two</li>
+<li class="on"><code>[X]</code> three</li>
+</ul></li>
+<li class="trans"><code>[-]</code> percentage bar <code>[33%]</code> Create it by typing '%' in '[]', it is auto populated when subitems are toggled.
+<ul class="org-ul">
+<li class="on"><code>[X]</code> i</li>
+<li class="off"><code>[&#xa0;]</code> ii</li>
+<li class="off"><code>[&#xa0;]</code> iii</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc9291e3" class="outline-2">
+<h2 id="orgc9291e3"><span class="section-number-2">6.</span> Todo stuff!!&#xa0;&#xa0;&#xa0;<span class="tag"><span class="keys">keys</span></span></h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Text goes here.
+Next test goes here.
+</p>
+
+<ul class="org-ul">
+<li>Org mode was designed for todo stuff.</li>
+<li>States are only allowed on headers.</li>
+</ul>
+</div>
+<div id="outline-container-org1d57c01" class="outline-3">
+<h3 id="org1d57c01"><span class="section-number-3">6.1.</span> <span class="todo TODO">TODO</span> explain todo lists</h3>
+</div>
+<div id="outline-container-org93331bb" class="outline-3">
+<h3 id="org93331bb"><span class="section-number-3">6.2.</span> <span class="done DONE">DONE</span> cycle through states.</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>Press "C-c C-t" to cycle through states.</li>
+<li>Can also use 'Shift-&lt;arrow keys&gt;'
+<ul class="org-ul">
+<li>up: raise priority</li>
+<li>down: lower priority</li>
+<li>left: previous state</li>
+<li>right: next state</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9e72066" class="outline-3">
+<h3 id="org9e72066"><span class="section-number-3">6.3.</span> <span class="done DONE">DONE</span> Setup deadline. Press "C-c C-d" to bring up a calendar. Use "Shift-&lt;arrow keys&gt;" to navigate the calendar.</h3>
+<div class="outline-text-3" id="text-6-3">
+<p><span class="timestamp-wrapper"><span class="timestamp-kwd">DEADLINE:</span> <span class="timestamp">&lt;2018-07-31 Tue&gt;</span></span></p>
+</div>
+</div>
+</div>
+<div id="outline-container-org7988523" class="outline-2">
+<h2 id="org7988523"><span class="section-number-2">7.</span> Date and Time&#xa0;&#xa0;&#xa0;<span class="tag"><span class="keys">keys</span></span></h2>
+<div class="outline-text-2" id="text-7">
+<p>
+<a href="https://orgmode.org/manual/Creating-timestamps.html">https://orgmode.org/manual/Creating-timestamps.html</a>
+</p>
+<ul class="org-ul">
+<li>'C-c C-d' Setup deadline. Press "C-c C-d" to bring up a calendar. Use "Shift-&lt;arrow keys&gt;" to navigate the calendar.</li>
+<li>'C-c .' Prompt for date and insert a corresponding timestamp. Modify the timestamp if cursor is on a timestamp. When
+this command is used twice in succession, a <b>time range</b> is inserted.</li>
+<li>'C-c !' Like C-c ., but insert an inactive timestamp that will not cause an agenda entry.</li>
+<li>'Shift-&lt;arrow keys&gt;' Very useful to change the date after it is inserted. also useful to move date between
+agend-non-agend modes.</li>
+<li>'C-c &lt;' Insert a timestamp corresponding to wherever the cursor is in the Calendar.</li>
+<li>'C-c &gt;' Access the Emacs calendar for the current date. If there is a timestamp in the current line, go to the
+corresponding  date instead.</li>
+<li>'C-c C-o' Access the agenda for the date given by the timestamp or -range at point (see Weekly/daily agenda).</li>
+<li>'C-c C-y' Evaluate a time range by computing the difference between start and end. With a prefix argument, insert
+result  after the time range (in a table: into the following column).</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9d29c71" class="outline-2">
+<h2 id="org9d29c71"><span class="section-number-2">8.</span> Key Bindings&#xa0;&#xa0;&#xa0;<span class="tag"><span class="keys">keys</span></span></h2>
+<div class="outline-text-2" id="text-8">
+<ul class="org-ul">
+<li>'M-RET' insert new header/item at the same level.</li>
+<li>'C-RET' insert new header after subtree.</li>
+<li>'Shift-M-RET' insert new TODO entry/checkbox item</li>
+<li>'Shift-C-RET' insert TODO entry/ckbx after subtree</li>
+<li>'C-c -' turn (head)line into item, and also cycle item type (-, +, 1., 1) etc.)</li>
+<li>'C-c *' turn item/line into headline</li>
+<li>'C-c C-*' turn all items/lines into headline</li>
+<li>'M-&lt;arrow keys&gt;'
+<ul class="org-ul">
+<li>up: move up</li>
+<li>down: move down</li>
+<li>left: promote header level (create super item)</li>
+<li>right: demote header level (create sub item)</li>
+</ul></li>
+<li>'Shift-Tab' Cycles the entire buffer by visting each subtree in order.</li>
+<li>'Tab'
+<ul class="org-ul">
+<li>When pressed on a group of list items/headers, it expands/collapse the tree.</li>
+<li>When pressed on an individual list item/header, it cycles through various levels of header/list.</li>
+</ul></li>
+<li>'C-c C-n' next heading</li>
+<li>'C-c C-p' previous heading</li>
+<li>'C-c C-f' next heading at the same level</li>
+<li>'C-c C-b' previous heading at the same level</li>
+<li>'C-c C-u' backward to higher level heading</li>
+<li>'C-c C-z' take a note</li>
+<li><a href="https://orgmode.org/orgcard.pdf">Complete Short Cuts Wiki</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5b1db4a" class="outline-2">
+<h2 id="org5b1db4a"><span class="section-number-2">9.</span> Indentaion</h2>
+<div class="outline-text-2" id="text-9">
+<ul class="org-ul">
+<li>Use org-indent-mode to toggle indentation in a file.</li>
+<li>You can turn on org-indent-mode for all files by customizing the variable org-startup-indented.</li>
+<li>You can turn it on for individual files using</li>
+</ul>
+<p>
+<code>#+STARTUP: indent</code>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org981915c" class="outline-2">
+<h2 id="org981915c"><span class="section-number-2">10.</span> Paragraphs</h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li><a href="https://orgmode.org/manual/Paragraphs.html#Paragraphs">Wiki</a></li>
+</ul>
+<p>
+Paragraphs are separated by at least one empty line. If you need to enforce a line break within a paragraph, use ‘\\’ at the end of a line.
+</p>
+
+<p>
+To preserve the line breaks, indentation and blank lines in a region, but otherwise use normal formatting, you can use this construct, which can also be used to format poetry.
+</p>
+
+<p class="verse">
+Great clouds overhead<br>
+Tiny black birds rise and fall<br>
+Snow covers Emacs<br>
+<br>
+&#xa0;&#xa0;&#xa0;&#xa0;&#x2013; AlexSchroeder<br>
+</p>
+<p>
+When quoting a passage from another document, it is customary to format this as a paragraph that is indented on both the left and the right margin. You can include quotations in Org mode documents like this:
+</p>
+
+<blockquote>
+<p>
+Everything should be made as simple as possible,
+but not any simpler &#x2013; Albert Einstein
+</p>
+</blockquote>
+<p>
+If you would like to center some text, do it like this:
+</p>
+
+<div class="org-center">
+<p>
+Everything should be made as simple as possible, <br>
+but not any simpler
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1f4e5d7" class="outline-2">
+<h2 id="org1f4e5d7"><span class="section-number-2">11.</span> Tables&#xa0;&#xa0;&#xa0;<span class="tag"><span class="keys">keys</span>&#xa0;<span class="notes">notes</span></span></h2>
+<div class="outline-text-2" id="text-11">
+<ul class="org-ul">
+<li>These are as powerful as spreadsheets(supports formulas and lisp code). Learn more about it later.</li>
+<li>1. Create columns separate by |</li>
+<li>2. Type "|-" and press tab, this will complete the table.</li>
+<li>3. Now type text in rows, it auto-formats the width. Also reformats the table when you move to next line.</li>
+<li>4. M-&lt;arrow keys&gt; : allows you to move around rows or columns.</li>
+</ul>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">fdskljfl</th>
+<th scope="col" class="org-left">saldfkjls</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">lasdfjlsdjfjs</td>
+<td class="org-left">sdjflajsdlfjl</td>
+</tr>
+
+<tr>
+<td class="org-left">sldfjls</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+
+
+<colgroup>
+<col  class="org-right">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Some</th>
+<th scope="col" class="org-left">Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">buckle my shoe</td>
+</tr>
+
+<tr>
+<td class="org-right">34</td>
+<td class="org-left">shut the door</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">col2</th>
+<th scope="col" class="org-left">col 3</th>
+<th scope="col" class="org-left">column 1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">jdljaf</td>
+<td class="org-left">jlkjlj</td>
+<td class="org-left">asdjfl</td>
+</tr>
+
+<tr>
+<td class="org-left">fjdfkdjfkdjfj</td>
+<td class="org-left">kdjfkjdkf</td>
+<td class="org-left">afdj</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">test</th>
+<th scope="col" class="org-left">col2</th>
+<th scope="col" class="org-left">col3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">adlfjaldsjf</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org6690596" class="outline-2">
+<h2 id="org6690596"><span class="section-number-2">12.</span> Source code&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notes">notes</span></span></h2>
+<div class="outline-text-2" id="text-12">
+<ul class="org-ul">
+<li>Add formatted source code to notes.</li>
+<li>Type below text or just type shortcut "&lt;s TAB" to generate it.</li>
+<li><code>#+BEGIN_SRC java</code></li>
+<li><code>#+END_SRC</code></li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-java"><span style="color: #b9ca4a;">public</span> <span style="color: #b9ca4a;">class</span> <span style="color: #7aa6da;">MyTest</span> <span style="color: #eaeaea;">{</span>
+    <span style="color: #b9ca4a;">public</span> <span style="color: #b9ca4a;">static</span> <span style="color: #7aa6da;">int</span> <span style="color: #e78c45;">getNumber</span><span style="color: #70c0b1;">()</span> <span style="color: #70c0b1;">{</span>
+        <span style="color: #b9ca4a;">return</span> 1;
+    <span style="color: #70c0b1;">}</span>
+<span style="color: #eaeaea;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1ec280a" class="outline-2">
+<h2 id="org1ec280a"><span class="section-number-2">13.</span> Tags&#xa0;&#xa0;&#xa0;<span class="tag"><span class="keys">keys</span></span></h2>
+<div class="outline-text-2" id="text-13">
+<ul class="org-ul">
+<li>Press 'C-c C-c' to create a tag.</li>
+<li>Repeat it to add new tag.</li>
+<li>Tags can only be created on headers.</li>
+<li>Tags are case-sensitive.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7f9c318" class="outline-2">
+<h2 id="org7f9c318"><span class="section-number-2">14.</span> LaTeX integration&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notes">notes</span></span></h2>
+<div class="outline-text-2" id="text-14">
+<ul class="org-ul">
+<li>Characters: &alpha; &rarr; &beta;</li>
+<li>\(O(n \log n)\)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdb2c213" class="outline-2">
+<h2 id="orgdb2c213"><span class="section-number-2">15.</span> Export&#xa0;&#xa0;&#xa0;<span class="tag"><span class="keys">keys</span></span></h2>
+<div class="outline-text-2" id="text-15">
+<ul class="org-ul">
+<li>Supports export to various formats.</li>
+<li>Use "C-c C-e" to export.</li>
+<li>Press the key corresponding to your export format.</li>
+<li><a href="https://orgmode.org/manual/Export-settings.html">Export settings</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd1a7fd2" class="outline-2">
+<h2 id="orgd1a7fd2"><span class="section-number-2">16.</span> Agenda&#xa0;&#xa0;&#xa0;<span class="tag"><span class="keys">keys</span>&#xa0;<span class="notes">notes</span></span></h2>
+<div class="outline-text-2" id="text-16">
+<ul class="org-ul">
+<li>Press 'C-c [' to enable agenda.</li>
+<li>Press 'M-x org-agenda' to bring up agend options</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org658e20d" class="outline-2">
+<h2 id="org658e20d"><span class="section-number-2">17.</span> Notes&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notes">notes</span></span></h2>
+<div class="outline-text-2" id="text-17">
+<ul class="org-ul">
+<li>'M-x org-info' to view org-mode help documentation.</li>
+<li>Use Org-mode for things that dont change to often. e.g. config, KB, wiki, papers etc.</li>
+<li>Above suggestion is contrary to the principles of Litrerate Programming.</li>
+<li>Various elisp utilities are available to enhance Org-mode. e.g. there is one to pretty print bullets and tabify them.</li>
+<li>Few examples:</li>
+</ul>
+<p>
+<code>org2blog</code>
+<code>org-publish</code>
+<code>ox-twbs</code>
+<code>orgzly</code>
+</p>
+</div>
+</div>
