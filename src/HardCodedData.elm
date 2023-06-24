@@ -6,8 +6,8 @@ import LanguageTag.Language
 
 dataModContacto : { description : String, title : String }
 dataModContacto =
-    { description = "Formulario para enviar dudas, comentarios o retroalimentación y hacer contacto o establecer comunicación con "
-    , title = "Formato para comunicarse con "
+    { description = "Formulario para enviar comentarios, retroalimentar o establecer comunicación con " ++ siteName
+    , title = "Para comunicarse con CFD"
     }
 
 
@@ -17,7 +17,7 @@ dataModContacto =
 
 canonicalUrl : String
 canonicalUrl =
-    "https://reftex.com/"
+    "https://comunidadfamiliadedios.org/"
 
 
 
@@ -31,7 +31,7 @@ imagen :
     }
 imagen =
     { logoTrans = "f_auto"
-    , logoResource = "v1619940728/dreamstime_m_29668275_t0oapr.jpg"
+    , logoResource = "v1683373048/CFD1/0913ipIMG_0130_rzmkmi.jpg"
     , altMenuLogo = "nada"
     }
 
@@ -42,9 +42,10 @@ imagen =
    que se define con siteName el nombre del folder
 -}
 
+
 siteName : String
 siteName =
-    "content"
+    "cfd"
 
 
 localito : Maybe ( LanguageTag.Language.Language, LanguageTag.Country.Country )
@@ -53,4 +54,3 @@ localito =
         ( LanguageTag.Language.es
         , LanguageTag.Country.mx
         )
-

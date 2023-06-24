@@ -1,5 +1,5 @@
 {
-   "name": "mep3-app",
+   "name": "Página de la Comunidad Familia de Dios",
    "type": "module",
    "scripts": {
       "postinstall": "elm-tooling install",
@@ -8,7 +8,6 @@
       "build": "tailwindcss -i input.css -o tailwind.css --minify && elm-pages build",
       "tail": "tailwindcss -i input.css -o tailwind.css",
       "server": "python -m http.server 8421 --bind 127.0.0.12 --directory dist",
-      "asdf": "aws s3 sync ./dist s3://asdf.mx --delete"
    },
    "devDependencies": {
       "@tailwindcss/aspect-ratio": "^0.4.2",

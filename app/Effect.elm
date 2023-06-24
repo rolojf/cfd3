@@ -42,6 +42,9 @@ type Effect msg
         { respuestas : Encode.Value
         , toMsg : Result Http.Error String -> msg
         }
+      -- de la galería
+    | CheckIfInView String (Result Dom.Error Dom.Element -> msg)
+    | Success msg
 
 
 {-| -}
@@ -122,6 +125,15 @@ map fn effect =
                 { respuestas = someInfo.respuestas
                 , toMsg = someInfo.toMsg >> fn
                 }
+
+        -- de la galería
+        CheckIfInView domElementId msg ->
+            CheckIfInView
+                domElementId
+                (msg >> fn)
+
+        Success msg ->
+            Success <| fn msg
 
 
 {-| -}
@@ -205,6 +217,17 @@ perform ({ fromPageMsg, key } as helpers) effect =
                     Http.expectString
                         (infoPasada.toMsg >> fromPageMsg)
                 }
+
+        -- de la galería
+        CheckIfInView domElementId toMsg ->
+            Task.attempt
+                (\elementoResultante -> fromPageMsg (toMsg elementoResultante))
+                (Dom.getElement domElementId)
+
+        Success toMsg ->
+            Task.perform
+                (\_ -> fromPageMsg toMsg)
+                (Task.succeed ())
 
 
 type alias FormData =
