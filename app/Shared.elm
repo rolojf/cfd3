@@ -17,13 +17,13 @@ import MiCloudinary
 import Pages.Flags
 import Pages.PageUrl exposing (PageUrl)
 import PagesMsg exposing (PagesMsg)
-import UrlPath exposing (UrlPath)
 import Route exposing (Route)
 import SharedTemplate exposing (SharedTemplate)
 import Simple.Animation as Animation exposing (Animation)
 import Simple.Animation.Animated as Animated
 import Simple.Animation.Property as P
 import Url
+import UrlPath exposing (UrlPath)
 import View exposing (View)
 
 
@@ -367,10 +367,10 @@ viewMenu localRoute dataDelYaml ligas menuOpen byeMenu toMsg =
                         []
                         [ Html.span
                             [ class "tw sr-only" ]
-                            [ text "Workflow" ]
+                            [ text "Comunidad Familia de Dios" ]
                         , Html.img
                             [ class "tw h-8 w-auto sm:h-10"
-                            , Attr.src "/logo.svg"
+                            , Attr.src "/logo.png"
                             , Attr.alt <| "Logotipo de " ++ dataDelYaml.nosotros
                             ]
                             []
@@ -408,7 +408,7 @@ viewMenu localRoute dataDelYaml ligas menuOpen byeMenu toMsg =
                             [ div []
                                 [ Html.img
                                     [ class "tw h-8 w-auto"
-                                    , Attr.src "/logo.svg"
+                                    , Attr.src "/icon-192.png"
                                     , Attr.alt "Logotipo"
                                     ]
                                     []
