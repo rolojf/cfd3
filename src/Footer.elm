@@ -20,21 +20,21 @@ footer =
             ]
             [ text "Footer" ]
         , div
-            [ class "tw mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32" ]
+            [ class "tw mx-auto max-w-7xl px-6 pb-8" ]
             [ div
-                [ class "tw mt-8 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between" ]
+                [ class "tw border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between" ]
                 [ div
-                    [ class "tw flex space-x-6 md:order-2" ]
+                    [ class "tw flex space-x-6 md:order-2 h-8" ]
                     [ Html.a
                         [ Attr.href "#"
-                        , class "tw text-gray-400 hover:text-gray-500"
+                        , class "tw text-gray-500 hover:text-gray-700"
                         ]
                         [ Html.span
                             [ class "sr-only"
                             ]
                             [ text "Facebook" ]
                         , svg
-                            [ SvgAttr.class "tw h-6 w-6"
+                            [ SvgAttr.class "tw h-8 w-8"
                             , SvgAttr.fill "currentColor"
                             , SvgAttr.viewBox "0 0 24 24"
                             , Attr.attribute "aria-hidden" "true"
@@ -91,13 +91,13 @@ footer =
                     -}
                     , Html.a
                         [ Attr.href "https://github.com/rolojf"
-                        , class "tw text-gray-400 hover:text-gray-500"
+                        , class "tw text-gray-500 hover:text-gray-700"
                         ]
                         [ Html.span
                             [ class "sr-only" ]
                             [ text "GitHub" ]
                         , svg
-                            [ SvgAttr.class "h-6 w-6"
+                            [ SvgAttr.class "h-8 w-8"
                             , SvgAttr.fill "currentColor"
                             , SvgAttr.viewBox "0 0 24 24"
                             , Attr.attribute "aria-hidden" "true"
@@ -112,13 +112,13 @@ footer =
                         ]
                     , Html.a
                         [ Attr.href "https://www.youtube.com/channel/UCMVoow4dusqjAX9R8Hakfqg"
-                        , class "tw text-gray-400 hover:text-gray-500"
+                        , class "tw text-gray-500 hover:text-gray-700"
                         ]
                         [ Html.span
                             [ class "sr-only" ]
                             [ text "YouTube" ]
                         , svg
-                            [ SvgAttr.class "tw h-6 w-6"
+                            [ SvgAttr.class "tw h-8 w-8"
                             , SvgAttr.fill "currentColor"
                             , SvgAttr.viewBox "0 0 24 24"
                             , Attr.attribute "aria-hidden" "true"
